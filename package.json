@@ -1,0 +1,38 @@
+{
+    "name": "freem",
+    "version": "1.0.0",
+    "description": "Get free RAM space info from `free`",
+    "license": "MIT",
+    "repository": "http://github.com/jaysingh/freem",
+    "author": {
+        "name": "Jayram Singh",
+        "email": "jayram.chandan@gmail.com",
+        "url": "http://github.com/jaysingh"
+    },
+    "engines": {
+        "node": ">=0.10.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "files": [
+        "index.js"
+    ],
+    "keywords": [
+        "free",
+        "free-m",
+        "free-k",
+        "free-g",
+        "free-meomry",
+        "memory-info",
+        "memory-available",
+        "data",
+        "fs",
+        "RAM-size",
+        "buffer-size",
+        "cache-size",
+        "main-memory",
+        "size",
+        "RAM"
+    ]
+}
