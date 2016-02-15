@@ -1,6 +1,6 @@
 {
     "name": "freem",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Get free RAM space info from `free`",
     "license": "MIT",
     "repository": "http://github.com/jaysingh/freem",
@@ -8,6 +8,10 @@
         "name": "Jayram Singh",
         "email": "jayram.chandan@gmail.com",
         "url": "http://github.com/jaysingh"
+    },
+    "contributors": {
+        "name": "Alexander Wunschik",
+        "email": "dev@wunschik.net"
     },
     "engines": {
         "node": ">=0.10.0"

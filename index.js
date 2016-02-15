@@ -10,10 +10,10 @@ function run(args, cb) {
 
 		cb(null, stdout.trim().split('\n').slice(1).map(function (el) {
 			var cl = el.split(/\s+(?=[\d\/])/);
-			switch(cl[0]) {
-				case "Mem:":
-				    return {
-				    	type: "Mem:",
+			switch(cl.length) {
+				case 7: // Mem:
+					return {
+						type: "Mem:",
 						total: cl[1],
 						used: cl[2],
 						free: cl[3],
@@ -21,24 +21,24 @@ function run(args, cb) {
 						buffers: cl[5],
 						cached: cl[6]
 					};
-				    break;
-				case "-/+ buffers/cache:":
-				    return {
-				    	type: "-/+ buffers/cache:",
+					break;
+				case 3: // -/+ buffers/cache:
+					return {
+						type: "-/+ buffers/cache:",
 						used: cl[1],
 						free: cl[2]
 					};
-				    break;
-				case "Swap:":
-				    return {
-				    	type: "Swap:",
+					break;
+				case 4: //Swap:
+					return {
+						type: "Swap:",
 						total: cl[1],
 						used: cl[2],
 						free: cl[3]
 					};
-				    break;
+					break;
 			}
-			
+
 		}));
 	});
 };
